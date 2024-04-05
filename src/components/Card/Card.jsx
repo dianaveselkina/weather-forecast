@@ -17,7 +17,9 @@ const Card = () => {
       )
       .then((res) => {
         console.log(res);
-        setWeather(res.data.list);
+        setWeather(
+          res.data.list.filter((reading) => reading.dt_txt.includes('21:00:00'))
+        );
         setCity(res.data.city.name);
         setDay(res.data.list);
       })
