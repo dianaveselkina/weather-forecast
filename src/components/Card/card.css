@@ -1,0 +1,22 @@
+.card {
+  width: clamp(500px, 50%, 700px);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: clamp(500px, 50%, 700px);
+  height: 500px;
+  border: 1px solid #26ceda;
+  border-radius: 16px;
+}
+.forecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 32px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
