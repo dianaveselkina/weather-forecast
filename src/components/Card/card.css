@@ -1,13 +1,16 @@
 .card {
-  width: clamp(500px, 50%, 700px);
-}
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  width: clamp(500px, 50%, 700px);
-  height: 500px;
+  width: clamp(250px, 30%, 300px);
   border: 1px solid #26ceda;
   border-radius: 16px;
+  padding: 16px;
+}
+.wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: clamp(500px, 90%, 800px);
+  height: 500px;
 }
 .forecast {
   display: flex;
@@ -19,4 +22,10 @@
 .icon {
   width: 30px;
   height: 30px;
+}
+.data {
+  padding: 24px 24px;
+}
+.city {
+  color: #c9e1e4;
 }

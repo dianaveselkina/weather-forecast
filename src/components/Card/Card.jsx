@@ -33,8 +33,8 @@ const Card = () => {
         <>
           {weather.map((weather) => (
             <div className="card">
-              <p>{city}</p>
-              <p>{weather.dt_txt.slice(0, 10)}</p>
+              <p className="city">{city}</p>
+              <p className="data">{weather.dt_txt.slice(0, 10)}</p>
 
               <div className="forecast">
                 <img

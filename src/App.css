@@ -5,6 +5,26 @@
   color: black;
   font-size: 24px;
 }
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
 ul,
 ol {
   list-style-type: none;
@@ -12,9 +32,4 @@ ol {
 a {
   text-decoration: none;
   color: black;
-}
-.red {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
 }
