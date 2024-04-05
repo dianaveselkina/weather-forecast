@@ -6,10 +6,6 @@ export const CardList = () => {
     <div className="cardList">
       <h3> Прогноз погоды</h3>
       <Card />
-      {/* <Card />
-      <Card />
-      <Card />
-      <Card /> */}
     </div>
   );
 };
