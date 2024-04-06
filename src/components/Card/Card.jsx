@@ -51,7 +51,7 @@ const Card = () => {
               </div>
               <div className="forecast">
                 <img className="icon" src="/img/cloud.png" alt="cloud" />
-                <p>{weather.weather[0].description}</p>
+                <p className="description">{weather.weather[0].description}</p>
               </div>
               <div className="forecast">
                 <img className="icon" src="/img/cloud.png" alt="cloud" />
