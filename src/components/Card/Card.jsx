@@ -13,7 +13,7 @@ const Card = () => {
   const fetchCard = () => {
     axios
       .get(
-        'https://api.openweathermap.org/data/2.5/forecast?cnt=40&units=metric&q=Ryazan&appid=ed1041d1a5e2e63eb8f1f7036d40ff14'
+        'https://api.openweathermap.org/data/2.5/forecast?&lang=ru&cnt=40&units=metric&q=Ryazan&appid=ed1041d1a5e2e63eb8f1f7036d40ff14'
       )
       .then((res) => {
         setWeather(
@@ -48,6 +48,10 @@ const Card = () => {
                 <img className="icon" src="/img/humidity.png" alt="humidity" />
                 <p>{Math.round(weather.main.humidity)}</p>
                 <span>%</span>
+              </div>
+              <div className="forecast">
+                <img className="icon" src="/img/cloud.png" alt="cloud" />
+                <p>{weather.weather[0].description}</p>
               </div>
               <div className="forecast">
                 <img className="icon" src="/img/cloud.png" alt="cloud" />
