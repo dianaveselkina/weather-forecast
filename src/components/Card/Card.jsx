@@ -16,7 +16,6 @@ const Card = () => {
         'https://api.openweathermap.org/data/2.5/forecast?cnt=40&units=metric&q=Ryazan&appid=ed1041d1a5e2e63eb8f1f7036d40ff14'
       )
       .then((res) => {
-        console.log(res);
         setWeather(
           res.data.list.filter((el) => el.dt_txt.includes('21:00:00'))
         );

@@ -4,13 +4,35 @@
   border-radius: 16px;
   padding: 16px;
 }
+.card:hover {
+  cursor: pointer;
+}
+.card:nth-child(1):hover {
+  background-image: url('/public/img/ryazan.jpg');
+  background-size: cover;
+}
+.card:nth-child(2):hover {
+  background-image: url('/public/img/monument.jpg');
+  background-size: cover;
+}
+.card:nth-child(3):hover {
+  background-image: url('/public/img/winter.jpg');
+  background-size: cover;
+}
+.card:nth-child(4):hover {
+  background-image: url('/public/img/lighthouse.jpg');
+  background-size: cover;
+}
+.card:nth-child(5):hover {
+  background-image: url('/public/img/mushroom.jpg');
+  background-size: cover;
+}
 .wrapper {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   width: clamp(500px, 90%, 800px);
-  height: 500px;
 }
 .forecast {
   display: flex;

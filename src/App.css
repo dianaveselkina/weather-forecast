@@ -4,7 +4,15 @@
   margin: 0 auto;
   color: black;
   font-size: 24px;
+  height: auto;
 }
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
 * {
   padding: 0px;
   margin: 0px;

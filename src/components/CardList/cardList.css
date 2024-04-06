@@ -1,6 +1,6 @@
 .cardList {
   max-width: 1440px;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
   padding-bottom: 20px;
   display: flex;
